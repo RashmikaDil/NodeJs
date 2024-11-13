@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Saving App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Money Saving Application</h1>
+
+        <!-- Display balance -->
+        <div id="balance-container">
+            <h2>Balance: $<span id="balance">0</span></h2>
+        </div>
+
+        <!-- Add Transaction Form -->
+        <div id="transaction-form">
+            <input type="number" id="amount" placeholder="Amount" required>
+            <select id="type">
+                <option value="saving">Saving</option>
+                <option value="expense">Expense</option>
+            </select>
+            <button id="addTransactionBtn">Add Transaction</button>
+        </div>
+
+        <!-- Transactions List -->
+        <div id="transactions-container">
+            <h3>Transactions</h3>
+            <ul id="transactions"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
